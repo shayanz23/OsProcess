@@ -1,0 +1,18 @@
+﻿@page
+@using System.Diagnostics
+@model IndexModel
+@{
+    ViewData["Title"] = "OS Processes";
+    Process[]? processes = ViewData["P"] as Process[];
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]!</h1>
+        @foreach (var item in processes!)
+        {
+            @if (item.ProcessName.Trim().Length > 0)
+            {
+                <p><a asp-page="./Details" asp-route-id="@item.Id">@item.ProcessName</a></p>
+            }
+        }
+</div>
