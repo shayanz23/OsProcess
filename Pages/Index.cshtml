@@ -3,12 +3,11 @@
 @model IndexModel
 @{
     ViewData["Title"] = "OS Processes";
-    Process[]? processes = ViewData["P"] as Process[];
 }
 
 <div class="text-center">
     <h1 class="display-4">@ViewData["Title"]!</h1>
-        @foreach (var item in processes!)
+        @foreach (var item in Model.Processes!)
         {
             @if (item.ProcessName.Trim().Length > 0)
             {

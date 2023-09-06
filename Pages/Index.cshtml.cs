@@ -8,6 +8,8 @@ public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
 
+    public IList<Process> Processes { get;set; } = default!;
+
     public IndexModel(ILogger<IndexModel> logger)
     {
         _logger = logger;
@@ -15,7 +17,6 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-        Process[] processes = Process.GetProcesses();
-        ViewData["P"] = processes;
+        Processes = Process.GetProcesses().ToList();
     }
 }
