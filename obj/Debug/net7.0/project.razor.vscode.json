@@ -24060,6 +24060,11 @@
       "FilePath": "/Users/shayanz/Projects/4952/OsProcess/Pages/_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/shayanz/Projects/4952/OsProcess/Pages/Details.cshtml",
+      "TargetPath": "Pages\\Details.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }

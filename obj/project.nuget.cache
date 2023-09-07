@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UoMiDobZojDAuuA+s+rxw2dEy74shM5f3tDncxIw11ORljqootqU7W4+h36iO0ubeUsEeMxL92xqvq+HcnKl2A==",
+  "dgSpecHash": "PdyfQWv5+Kda0MG/RcergOKzZmCepEkcstsWzNWANnGgEPVEFIEMAgNnLz0CbCX6Atmmqk5RzpXZy9BMksgJIg==",
   "success": true,
-  "projectFilePath": "/Users/shayanz/Projects/4952/OsProcess/OsProcess.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/jack/Projects/4952/OsProcess/OsProcess.csproj",
+  "expectedPackageFiles": [
+    "/home/jack/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.10/microsoft.aspnetcore.app.ref.7.0.10.nupkg.sha512"
+  ],
   "logs": []
 }
