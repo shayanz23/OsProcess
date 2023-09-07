@@ -4,6 +4,8 @@
 @{
     ViewData["Title"] = "OS Processes";
     Process[]? processes = ViewData["P"] as Process[];
+    double totalRam = ViewData["totalRam"] as double? ?? 0;
+    double totalCPU = ViewData["totalCPU"] as double? ?? 0;
 }
 
 <div class="text-center">
@@ -15,4 +17,8 @@
                 <p><a asp-page="./Details" asp-route-id="@item.Id">@item.ProcessName</a></p>
             }
         }
+        <h2>Total</h2>
+        <p>Number of proccesses: @processes.Length</p>
+        <p>Total ram used: @totalRam GB</p>
+        <p>Total CPU used: @totalCPU hours</p>
 </div>
